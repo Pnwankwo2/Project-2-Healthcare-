@@ -125,7 +125,7 @@ The project applies multiple classification algorithms such as:
 
 
 ### After Resampling Example
-![alt text](Resources/after_resampling.png)
+![alt text](after_resampling.png)
 
 A `GridSearchCV` is used to fine-tune the logistic regression model's hyperparameters.
 
