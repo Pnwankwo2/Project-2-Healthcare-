@@ -12,7 +12,7 @@ This project demonstrates how to use machine learning techniques for predicting 
 4. [Categorical Data Encoded](#categorical-data-encoded)
 5. [Balancing the Data](#balancing-the-data)
 6. [Modeling](#modeling)
-    - AdaBoost
+    - Random Forest Classifier
     - Logistic Regression
 8. [Conclusion](#conclusion)
 
@@ -53,7 +53,7 @@ from sklearn.model_selection import GridSearchCV
 9)  avg_glucose_level: average glucose level in blood
 10) bmi: body mass index
 11) smoking_status: "formerly smoked", "never smoked", "smokes" or "Unknown"*
-12) ==stroke: 1 if the patient had a stroke or 0 if not==
+12) stroke: 1 if the patient had a stroke or 0 if not
 *Note: "Unknown" in smoking_status means that the information is unavailable for this patient.`
 
 ### Installation of Data
@@ -127,7 +127,7 @@ The project applies multiple classification algorithms such as:
 ### After Resampling Example
 ![alt text](after_resampling.png)
 
-A `GridSearchCV` is used to fine-tune the Logistic Regression and AdaBoost models' hyperparameters.
+A `GridSearchCV` is used to fine-tune the logistic regression model's hyperparameters.
 
 ### Evaluation:
 - The models are evaluated using metrics like precision, recall, F1-score, and balanced accuracy to ensure reliable performance, especially in the presence of imbalanced data. In this project, various machine learning models were evaluated for their ability to predict stroke risk, with AdaBoost emerging as the most promising algorithm. AdaBoost demonstrated strong potential in identifying key patterns in the data, showing the capability to improve classification performance, particularly for imbalanced datasets.
